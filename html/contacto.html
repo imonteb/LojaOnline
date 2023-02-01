@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Test CEAC Loja online">
+    <meta name="keywords" content="Test CEAC">
+    <title>IMBCode</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../css/navgeral.css" rel="stylesheet" />
+    <link href="../css/carousel2.css" rel="stylesheet" />
+    <link
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid bg-gradient">
+    <header class="fixed-top">
+      <div class="nav-index bg-primary bg-gradient bg-opacity-100">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg nav-index">
+            <div class="container-fluid d-block">
+              <div class="d-flex justify-content-between">
+                <a class="navbar-brand" href="../index.html"
+                  ><img
+                    src="../images/imbcode.png"
+                    alt="IMBCODE"
+                    style="width: 70px"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  data-bs-target="#offcanvasNavbar"
+                  data-bs-toggle="offcanvas"
+                  type="button"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end bg-primary"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                  tabindex="-1"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Menu
+                    </h5>
+                    <button
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      type="button"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="">
+                    <div class="">
+                      <div class="offcanvas-body">
+                        <ul
+                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                        >
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                              <i class="bi bi-house"></i> Inicio
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./about.html">
+                              <i class="bi bi-info-circle"></i> Sobre
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link catalogo"
+                              href="./catalogo.html"
+                              aria-current="page"
+                            >
+                              <i class="bi bi-book"></i> Catálogo
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active link-info text-decoration-underline"
+                              href="./contacto.html"
+                            >
+                              <i class="bi bi-person-rolodex"></i> Contato
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="offcanvas-body">
+                        <ul
+                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                        >
+                          <li class="nav-item p-0 m-1 fst-italic small">
+                            <button
+                              class="btn btn-primary nav-link btn-header"
+                              id="tv-video-e-som"
+                              type="button"
+                            >
+                              TV, Vídeo e Som
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              class="btn btn-primary nav-link btn-header"
+                              id="telemoveis"
+                              type="button"
+                            >
+                              Telemóveis
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              class="btn btn-primary nav-link btn-header"
+                              id="informatica"
+                              type="button"
+                            >
+                              Informática Componentes Pc
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              class="btn btn-primary nav-link btn-header"
+                              id="smarthome"
+                              type="button"
+                            >
+                              Smarthome
+                            </button>
+                          </li>
+
+                          <li class="nav-item p-0 m-1 fst-italic small">
+                            <button
+                              class="btn btn-primary position-relative text-bg-danger shopping-cart"
+                              id="shopping-cart"
+                              type="button"
+                            >
+                              <i class="bi bi-cart4"></i><small> MyCart</small>
+                              <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-light"
+                                id="product-in-cart"
+                              >
+                                0+
+                              </span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="m-main">
+      <div class="row-cols-lg-2 d-sm-block d-lg-flex">
+        <aside class="p-2 border border-3 border-light">
+          <div class="map h-100">
+            <h3>Localização</h3>
+            <div class="h-75">
+              <iframe
+                class="google-map w-100 h-100 border border-primary border-opacity-50"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024.2031409375606!2d-16.811311170760817!3d32.68870912750931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5b065160c8e1c4b!2zMzLCsDQxJzE5LjQiTiAxNsKwNDgnMzguOCJX!5e1!3m2!1ses!2spt!4v1662279417649!5m2!1ses!2spt"
+                width="auto"
+                height="auto"
+                style="border: 2px"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </aside>
+        <aside class="p-2 border border-3 border-light">
+          <p class="text-primary text-center border rounded-5">
+            Preencha o formulário a seguir e entraremos em contato o mais breve
+            possível.
+          </p>
+
+          <form id="formulario" name="formulario" method="post">
+            <div class="row">
+              <div class="input-group">
+                <div class="col-6 form-floating mb-4">
+                  <input
+                    class="form-control"
+                    id="in-nome"
+                    name="nome"
+                    data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    type="text"
+                    title="Preencha o nome"
+                  />
+                  <label class="form-label" for="in-nome">Nome</label>
+                </div>
+                <div class="col-6 form-floating mb-4">
+                  <input
+                    class="form-control"
+                    id="in-sobrenome"
+                    name="sobrenome"
+                    data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    type="text"
+                    title="Preencha o sobrenome"
+                  />
+                  <label class="form-label" for="in-sobrenome">Sobrenome</label>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="col form-floating">
+                  <input
+                    class="form-control"
+                    id="in-email"
+                    name="email"
+                    data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    type="email"
+                    title="Preencha o E-mail"
+                  />
+                  <label class="form-label" for="in-email">Seu E-mail</label>
+                </div>
+                <div class="col-4 form-floating">
+                  <input
+                    class="form-control"
+                    id="in-telefone"
+                    name="tel"
+                    data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    type="tel"
+                    title="Preencha o Telefone"
+                  />
+                  <label class="form-label" for="in-telefone">Telefone</label>
+                </div>
+              </div>
+              <div class="row">
+                <p class="col form-label col-form-label-lg fs-6" for="in-nome">
+                  Seu texto é uma?
+                </p>
+              </div>
+              <div
+                class="input-group ms-2 mb-4"
+                tabindex="0"
+                data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                title="Preencha o assunto"
+              >
+                <div class="input-group form-check col-2">
+                  <input
+                    class="form-check-input"
+                    id="duvida"
+                    name="asunto"
+                    type="checkbox"
+                    value="duvida"
+                  />
+                  <label class="form-check-label ps-2" for="duvida">
+                    Duvida
+                  </label>
+                </div>
+                <div class="input-group form-check col-2">
+                  <input
+                    class="form-check-input"
+                    id="devolucion"
+                    name="asunto"
+                    type="checkbox"
+                    value="devolucion"
+                  />
+                  <label class="form-check-label ps-2" for="devolucion">
+                    Devolução
+                  </label>
+                </div>
+                <div class="input-group form-check col-2">
+                  <input
+                    class="form-check-input"
+                    id="outro"
+                    name="asunto"
+                    type="checkbox"
+                    value="outro"
+                  />
+                  <label class="form-check-label ps-2" for="outro">
+                    Outro
+                  </label>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="col form-floating">
+                  <textarea
+                    class="form-control"
+                    id="in-mensagem"
+                    name="mensagem"
+                    data-bs-hover="true"
+                    data-bs-placement="top"                    
+                    data-bs-toggle="popover"
+                    data-bs-trigger="hover"
+                    title="Preencha o mensagem"
+                    cols="30"
+                    rows="10"
+                    style="height: 200px"
+                  ></textarea>
+                  <label
+                    class="col-3 form-label col-form-label-lg fs-6"
+                    for="in-mensagem"
+                    >Mensagem</label
+                  >
+                </div>
+              </div>
+              <div class="row justify-content-end mt-3">
+                <button
+                  class="btn btn-primary col-3"
+                  id="btn-formulario"
+                  type="button"
+                >
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </aside>
+      </div>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                type="button"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                type="button"
+              >
+                Close
+              </button>
+              <button class="btn btn-primary" type="button">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-gradient">
+              <h5 class="modal-title" id="staticBackdropLabel">Deseja excluir este produto?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="errores">
+                Preencha o formulário a seguir e entraremos em contato o mais breve possível.
+              </p>
+            </div>
+            <div class="modal-footer bg-gradient">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Retorne ao formulário</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="container-fluid bg-primary bg-gradient bg-opacity-50">
+      <div class="row p-3">
+        <div class="col">
+          <div class="row">
+            <a class="navbar-brand" href="../index.html"
+              ><img
+                src="../images/imbcode.png"
+                alt="IMBCODE"
+                style="width: 90px"
+            /></a>
+          </div>
+          <div class="row text-light">
+            <small>
+              Computadores, Placas-mãe, Memória, Monitores e teclados. O nosso
+              inventário está sempre a mudar, por isso, se não vir o produto que
+              procura,
+              <span
+                ><a class="link-light" href="contacto.html" target="_self"
+                  >contacte-nos</a
+                ></span
+              >
+              e nós podemos ajudar!
+            </small>
+          </div>
+          <div class="row">
+            <div class="text-center py-2 align-items-center">
+              <p class="text-light fs-5">Redes Sociales</p>
+              <a
+                class="btn btn-primary m-1"
+                href="https://www.facebook.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+                ><i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://www.instagram.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://google.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-google"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://twitter.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://https://web.whatsapp.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row text-light">
+            <h3 class="">Contate-Nos</h3>
+            <div class="col-1">
+              <i class="bi bi-signpost"></i>
+            </div>
+            <div class="col-11">
+              <label>
+                Rua da Lombada #188.<br>
+                Santa Cruz.<br>
+                Ilha da Madeira. Portugal
+              </label>
+            </div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1">
+              <a class="link-light" href="./contacto.html" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-geo-alt"></i>
+              </a>
+            </div>
+            <div class="col-11">
+              <a class="link-light" href="./contacto.html" target="_blank" rel="noopener noreferrer">
+                <p>Vá para o mapa</p>
+              </a>
+            </div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1"><i class="bi bi-phone"></i></div>
+            <div class="col-11"><label>+351-938683562</label></div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1"><i class="bi bi-envelope"></i></div>
+            <div class="col-11">
+              <a href="mailto:imbcode@imbcode.com" class=" link-light">imbcode@imbcode.com</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="m-0" />
+
+        <!-- Copyright -->
+        <div class="align-items-center p-3 bg-gradient">
+          <div class="d-md-flex justify-content-md-evenly text-light">
+            <div>
+              © 2020 Copyright:<a class="link-light" href="https://imbcode.com/"
+                >IMBCODE</a
+              >
+            </div>
+            <div>
+              <small
+                ><a class="text-light" href="./legal/privacidad.html" target="_parent"
+                  >Política de Privacidade</a
+                ></small
+              >
+            </div>
+            <div>
+              <small
+                ><a class="text-light" href="./legal/termos.html" target="_parent"
+                  >Termos & Condições</a
+                ></small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Footer  -->
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/header.js" type="module"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

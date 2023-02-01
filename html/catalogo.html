@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Test CEAC Loja online">
+    <meta name="keywords" content="Test CEAC">
+    <title>IMBCode</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../css/navgeral.css" rel="stylesheet" />
+    <link href="../css/carousel2.css" rel="stylesheet" />
+    <link
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid bg-gradient">
+    <header class="fixed-top">
+      <div class="nav-index bg-primary bg-gradient bg-opacity-100">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg nav-index">
+            <div class="container-fluid d-block">
+              <div class="d-flex justify-content-between">
+                <a class="navbar-brand" href="../index.html"
+                  ><img
+                    src="../images/imbcode.png"
+                    alt="IMBCODE"
+                    style="width: 70px"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  data-bs-target="#offcanvasNavbar"
+                  data-bs-toggle="offcanvas"
+                  type="button"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end bg-primary"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                  tabindex="-1"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Menu
+                    </h5>
+                    <button
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      type="button"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="">
+                    <div class="">
+                      <div class="offcanvas-body">
+                        <ul
+                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                        >
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                              <i class="bi bi-house"></i> Inicio
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./about.html">
+                              <i class="bi bi-info-circle"></i> Sobre
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active link-info text-decoration-underline catalogo"
+                              href="./catalogo.html"
+                              aria-current="page"
+                            >
+                              <i class="bi bi-book"></i> Catálogo
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">
+                              <i class="bi bi-person-rolodex"></i> Contato
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="offcanvas-body">
+                        <ul
+                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                        >
+                          <li class="nav-item p-0 m-1 fst-italic small">
+                            <button
+                              type="button"
+                              class="btn btn-primary nav-link btn-header"
+                              id="tv-video-e-som"
+                            >
+                              TV, Vídeo e Som
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              type="button"
+                              class="btn btn-primary nav-link btn-header"
+                              id="telemoveis"
+                            >
+                              Telemóveis
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              type="button"
+                              class="btn btn-primary nav-link btn-header"
+                              id="informatica"
+                            >
+                              Informática Componentes Pc
+                            </button>
+                          </li>
+                          <li
+                            class="nav-item bg-primary p-0 m-1 fst-italic small"
+                          >
+                            <button
+                              type="button"
+                              class="btn btn-primary nav-link btn-header"
+                              id="smarthome"
+                            >
+                              Smarthome
+                            </button>
+                          </li>
+
+                          <li class="nav-item p-0 m-1 fst-italic small">
+                            <button type="button" class="btn btn-primary position-relative text-bg-danger shopping-cart"
+                              id="shopping-cart">
+                              <i class="bi bi-cart4"></i><small> MyCart</small>
+                              <span id="product-in-cart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-light ">
+                                0+
+                                <!-- <span class="visually-hidden">unread messages</span> -->
+                              </span>
+                            </button>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="m-main">
+      <div >
+        
+        
+      </div>
+    </main>
+    <!--Main layout-->
+    <section class="container mb-4">
+      <div  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-1 justify-content-center" id="cards">
+        <template id="template-card-products">
+          <div class="col">
+            <div class="card h-100 ">
+              <img class="card-img-top p-2" src="" alt="producto" />
+              <div class="card-body" style="min-height: 12em">
+                <h6 class="card-title" style="min-height: 8em"></h6>
+                <p class="card-text" style="min-height: 4em">
+                  <i class="bi bi-currency-euro"></i><span></span>
+                </p>
+              </div>
+              <div class="card-footer position-absolute start-0 end-0 bottom-0 elements-cart ">
+                <button type="button" class="btn  btn-outline-primary position-relative w-100  shopping-cart" >Adicionar ao carrinho</button>              
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="container-fluid bg-primary bg-gradient bg-opacity-50">
+      <div class="row p-3">
+        <div class="col">
+          <div class="row">
+            <a class="navbar-brand" href="../index.html"
+              ><img
+                src="../images/imbcode.png"
+                alt="IMBCODE"
+                style="width: 90px"
+            /></a>
+          </div>
+          <div class="row text-light">
+            <small>
+              Computadores, Placas-mãe, Memória, Monitores e teclados. O nosso
+              inventário está sempre a mudar, por isso, se não vir o produto que
+              procura,
+              <span
+                ><a class="link-light" href="contacto.html" target="_self"
+                  >contacte-nos</a
+                ></span
+              >
+              e nós podemos ajudar!
+            </small>
+          </div>
+          <div class="row">
+            <div class="text-center py-2 align-items-center">
+              <p class="text-light fs-5">Redes Sociales</p>
+              <a
+                class="btn btn-primary m-1"
+                href="https://www.facebook.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+                ><i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://www.instagram.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://google.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-google"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://twitter.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                class="btn btn-primary m-1"
+                href="https://https://web.whatsapp.com/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row text-light">
+            <h3 class="">Contate-Nos</h3>
+            <div class="col-1">
+              <i class="bi bi-signpost"></i>
+            </div>
+            <div class="col-11">
+              <label>
+                Rua da Lombada #188.<br>
+                Santa Cruz.<br>
+                Ilha da Madeira. Portugal
+              </label>
+            </div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1">
+              <a class="link-light" href="./contacto.html" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-geo-alt"></i>
+              </a>
+            </div>
+            <div class="col-11">
+              <a class="link-light" href="./contacto.html" target="_blank" rel="noopener noreferrer">
+                <p>Vá para o mapa</p>
+              </a>
+            </div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1"><i class="bi bi-phone"></i></div>
+            <div class="col-11"><label>+351-938683562</label></div>
+          </div>
+          <div class="row text-light">
+            <div class="col-1"><i class="bi bi-envelope"></i></div>
+            <div class="col-11">
+              <a href="mailto:imbcode@imbcode.com" class=" link-light">imbcode@imbcode.com</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="m-0" />
+
+        <!-- Copyright -->
+        <div class="align-items-center p-3 bg-gradient">
+          <div class="d-md-flex justify-content-md-evenly text-light">
+            <div>
+              © 2020 Copyright:<a class="link-light" href="https://imbcode.com/"
+                >IMBCODE</a
+              >
+            </div>
+            <div>
+              <small
+                ><a class="text-light" href="./legal/privacidad.html" target="_parent"
+                  >Política de Privacidade</a
+                ></small
+              >
+            </div>
+            <div>
+              <small
+                ><a class="text-light" href="./legal/termos.html" target="_parent"
+                  >Termos & Condições</a
+                ></small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Footer-->
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/header.js" type="module"></script>
+    <script src="../js/product.js" type="module"></script>
+  </body>
+</html>

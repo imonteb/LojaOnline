@@ -1,0 +1,130 @@
+[
+    {
+        "idProduct"     :   1,
+        "department"    :   "tv-video-e-som",
+        "equipment"     :   "tv",
+        "nombre"        :   "TV SAMSUNG UE75TU7025 (LED - 75'' - 189 cm - 4K Ultra HD - Smart TV)",
+        "urlImage"      :   "../images/products/som/tv75.webp",
+        "price"         :   "799.56"
+
+    },
+    {
+        "idProduct"     :   2,
+        "department"    :   "informatica",
+        "equipment"     :   "tv",
+        "nombre"        :   "Motherboard ASUS Expedition EX-B360M-V5 (Socket LGA 1151 (Socket H4) - Intel B360 - Micro ATX)",
+        "urlImage"      :   "../images/products/informatica/asusexb360m.jpg",
+        "price"         :   "98.35"
+
+    },
+    {
+        "idProduct"     :   3,
+        "department"    :   "tv-video-e-som",
+        "equipment"     :   "coluna",
+        "nombre"        :   "Coluna TWS 5W",
+        "urlImage"      :   "../images/products/som/colunajb.jpg",
+        "price"         :   "25.99"
+
+    },
+
+
+    {
+        "idProduct"     :   4,
+        "department"    :   "informatica",
+        "equipment"     :   "Impressora",
+        "nombre"        :   "Impressora BROTHER DCP-L3550CDW (Multifunções - Laser Cores - Wi-Fi)",
+        "urlImage"      :   "../images/products/printer/brother.webp",
+        "price"         :   "426.99"
+
+    },
+    {
+        "idProduct"     :   5,
+        "department"    :   "tv-video-e-som",
+        "equipment"     :   "coluna",
+        "nombre"        :   "Coluna TWS 5W",
+        "urlImage"      :   "../images/products/som/colunablue.jpg",
+        "price"         :   "25.99"
+
+    },
+    {
+        "idProduct"     :   6,
+        "department"    :   "tv-video-e-som",
+        "equipment"     :   "tv",
+        "nombre"        :   "TV LG 86QNED996 (QNED - 86'' - 218 cm - 8K Ultra HD - Smart TV)",
+        "urlImage"      :   "../images/products/som/tv86.webp",
+        "price"         :   "9156.56"
+
+    },
+    {
+        "idProduct"     :   7,
+        "department"    :   "informatica",
+        "equipment"     :   "Placa Gráfica",
+        "nombre"        :   "Placa Gráfica ASUS Tuf Gaming (NVIDIA - 12 GB DDR6)",
+        "urlImage"      :   "../images/products/informatica/asustufgaming.webp",
+        "price"         :   "549.99"
+
+    },
+    {
+        "idProduct"     :   8,
+        "department"    :   "informatica",
+        "equipment"     :   "processador",
+        "nombre"        :   "Processador MSI Core i7-10700KF (Socket LGA1200 - Octa-Core - 5.1 -GHz)",
+        "urlImage"      :   "../images/products/informatica/i7.webp",
+        "price"         :   "364.99"
+
+    },
+    {
+        "idProduct"     :   9,
+        "department"    :   "telemoveis",
+        "equipment"     :   "Smartphone",
+        "nombre"        :   "Smartphone XIAOMI POCO M4 Pro 5G (6.6 - 4 GB - 64 GB - Azul)",
+        "urlImage"      :   "../images/products/movil/xiaomipoco.webp",
+        "price"         :   "204.00"
+
+    },
+    {
+        "idProduct"     :   10,
+        "department"    :   "smarthome",
+        "equipment"     :   "camara",
+        "nombre"        :   "Câmara Rotativa Wifi Exterior 1080P 360º Visao Noturna para App",
+        "urlImage"      :   "../images/products/smarthome/camara.webp",
+        "price"         :   "73.66"
+
+    },
+    {
+        "idProduct"     :   11,
+        "department"    :   "smarthome",
+        "equipment"     :   "Alarma",
+        "nombre"        :   "Sistema de alarme de segurança ELRO HA63S",
+        "urlImage"      :   "../images/products/smarthome/alarma.jpg",
+        "price"         :   "157.00"
+
+    },
+    {
+        "idProduct"     :   12,
+        "department"    :   "telemoveis",
+        "equipment"     :   "Smartphone",
+        "nombre"        :   "Xiaomi Poco F4 8Gb/256Gb Preto - Telemóvel",
+        "urlImage"      :   "../images/products/movil/xiaomipocof4.webp",
+        "price"         :   "458.38"
+
+    },
+    {
+        "idProduct"     :   13,
+        "department"    :   "informatica",
+        "equipment"     :   "pcdesktop",
+        "nombre"        :   "COMPUTADOR GAMING - I9 12900KF",
+        "urlImage"      :   "../images/products/informatica/desktopi911900.jpg",
+        "price"         :   "1456.00"
+
+    },
+    {
+        "idProduct"     :   14,
+        "department"    :   "informatica",
+        "equipment"     :   "pcdesktop",
+        "nombre"        :   "COMPUTADOR DESKTOP GAMING INTEL I3 10100F QUAD CORE",
+        "urlImage"      :   "../images/products/informatica/desktopi310100.jpg",
+        "price"         :   "1172.00"
+
+    }
+]

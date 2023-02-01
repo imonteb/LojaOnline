@@ -1,0 +1,30 @@
+@import "../styles.css";
+
+/* ----------NavBar----------*/
+.m-main{
+ margin-top: 120px;
+}
+/* ----------NavBar----------*/
+.nav-index{
+  z-index: 1001;  
+   
+  }
+.navbar .navbar-nav .nav-link:hover{
+  color:aqua
+}
+.navbar .navbar-nav .nav-link{
+  color:white;
+  text-shadow: 1px 1px black;
+}
+
+
+/* ----------card css-------- */
+
+.card-img-css{
+  max-width: 250px;
+}
+.card-text-css{
+ min-height: 60px;
+}
+
+

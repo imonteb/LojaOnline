@@ -1,0 +1,61 @@
+/*---------- Carousel styling---------- */
+#carouselIndex,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 70vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('../images/banner2/IMG_20221103_073959.jpg');
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('../images/banner2/IMG_20210130_141540.jpg');
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('../images/banner2/IMG_20220429_122423.jpg');
+}  
+.carousel-item {
+      z-index: 5;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+.carousel-item img{     
+    width:  auto;   
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 6;
+}
+.carousel-indicators .indicators-color{
+  background-color: blue;
+}
+.carousel-text1{
+  text-shadow: 0.5px 0.5px gray;
+}
+.carousel-text2{
+  text-shadow: 1px 0.5px white;
+}
+.carousel-text-css1{
+  top: 40%;
+}
+.carousel-text-css2{
+  top: 35%;
+  left: 35%;
+}
+.carousel-text-css3{
+  top: 20%;
+}
+/*---------- Height for devices larger than 576px---------- */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
